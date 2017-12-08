@@ -3,5 +3,5 @@ A little pyplot script to visualise the characterisation of a conic section by a
 
 ![alt text](https://raw.githubusercontent.com/TropicalIsland/shock_coordinate_system_visualiser/master/Coord_plt.png)
 
-# LICENSE
+# License
 Available under the MIT LICENSE
