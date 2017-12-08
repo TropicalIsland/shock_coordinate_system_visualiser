@@ -5,7 +5,7 @@ from matplotlib.widgets import Slider, Button, RadioButtons
 """
 CONIC SECTION COORDINATE VISUALISER
 
-A small script to visualise an conic sections in an x & r coordinate system 
+A small script to visualise conic sections in an x & r coordinate system 
 in terms of a Radius, Bluntness, and two orthogonal oordinate directions as 
 defined in The Supersonic Blunt Body Problem - Milton D. Van Dyke 
 https://doi.org/10.2514/8.7744 / Try SciHub ;)
