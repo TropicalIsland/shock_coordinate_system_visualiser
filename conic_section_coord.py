@@ -25,13 +25,13 @@ eta0=0
 eps0=0
 
 # r is evaluated now
-r=R0*np.multiply(eta0,eps0)
+r=R0*eta0*eps0
 
 # Handle specific bluntness cases 
 if B0 == 0:
-	x=R0/2*(1+np.square(eps0)-np.square(eta0))
+	x=R0/2*(1+eps0**2-eta0**2)
 elif B0 == 1:
-	x=R0*(1-np.sqrt(1-np.multiply(np.square(eps0),eta0)))
+	x=R0*(1-np.sqrt(1-eps0)**2*eta0)
 else:
 	 x=R0/B0*(np.sqrt(1-B0*np.square(eps0)*(1-B0+B0*np.square(eta0))))
 
@@ -79,11 +79,11 @@ def update(val):
 	r = R*eta*eps
 	l.set_ydata(r)
 	if B == 0:
-		x=R/2*(1+np.square(eps)-np.square(eta))
+		x=R/2*(1+eps**2-eta**2)
 	elif B == 1:
-		x=R*(1-np.sqrt(1-np.multiply(np.square(eps),eta)))
+		x=R*(1-np.sqrt(1-eps**2*eta))
 	else:
-		x=R/B*(np.sqrt(1-B*np.square(eps)*(1-B+B*np.square(eta))))
+		x=R/B*(np.sqrt(1-B*eps**2*(1-B+B*eta**2)))
 	l.set_xdata(x)
 
 	global trace
